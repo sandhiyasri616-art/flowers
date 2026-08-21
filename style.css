@@ -2,10 +2,10 @@
    Variables & Reset
    ========================================= */
 :root {
-    --primary-color: #6a1a2f; /* Darker Burgundy */
-    --secondary-color: #8c2a3e; /* Standard Burgundy */
-    --accent-color: #e5b3b7; /* Deeper Blush */
-    --bg-light: #fffafa; /* Very light blush tint */
+    --primary-color: #6a1a2f;
+    --secondary-color: #8c2a3e;
+    --accent-color: #e5b3b7;
+    --bg-light: #fffafa;
     --text-dark: #333333;
     --text-light: #666666;
     --white: #ffffff;
@@ -547,7 +547,8 @@ ul {
     transition: var(--transition);
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
     background-color: var(--primary-color);
     color: var(--white);
     border-color: var(--primary-color);
@@ -567,7 +568,7 @@ ul {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    display: block; /* For JS filtering */
+    display: block;
 }
 
 .product-card.hide {
@@ -648,7 +649,10 @@ ul {
    ========================================= */
 .about {
     padding: 8rem 5%;
-    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('rose_bouquet.jpg') center/cover fixed;
+    background: linear-gradient(
+        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.9)
+    ), url('Background.png') center/cover fixed;
     text-align: center;
 }
 
@@ -896,29 +900,30 @@ ul {
         text-align: center;
         padding-top: 8rem;
     }
-    
+
     .hero-content {
         padding-right: 0;
         margin-bottom: 3rem;
     }
-    
+
     .hero-content h1 {
         font-size: 3rem;
     }
-    
+
     .hero-content p {
         margin: 0 auto 2rem;
     }
-    
+
     .hero-btns {
         justify-content: center;
     }
-    
+
     .contact-container {
         flex-direction: column;
     }
-    
-    .contact-info, .contact-form-container {
+
+    .contact-info,
+    .contact-form-container {
         padding: 2rem;
     }
 }
@@ -927,7 +932,7 @@ ul {
     .hamburger {
         display: block;
     }
-    
+
     .nav-links {
         position: absolute;
         top: 100%;
@@ -940,19 +945,19 @@ ul {
         justify-content: center;
         transition: 0.5s;
     }
-    
+
     .nav-links.active {
         left: 0;
     }
-    
+
     .nav-links li {
         margin: 1.5rem 0;
     }
-    
+
     .nav-links a {
         font-size: 1.5rem;
     }
-    
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
