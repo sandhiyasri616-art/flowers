@@ -552,38 +552,164 @@ ul {
 }
 
 /* =====================================================
-   OCCASION GRID
+   OCCASION - SINGLE ROW
 ===================================================== */
+
 .np-occasion-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 18px;
+    gap: 15px;
+    width: 100%;
 }
 
-/* =====================================================
-   OCCASION CARD
-===================================================== */
 .np-occasion-card {
     position: relative;
-    height: 360px;
+    height: 200px;
     overflow: hidden;
-    border-radius: 18px;
-    background: #ead9df;
+    border-radius: 14px;
     cursor: pointer;
+    background: #ead9df;
+    box-shadow: 0 5px 15px rgba(100, 31, 54, 0.08);
+    transition: 0.3s ease;
+}
+
+.np-occasion-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(100, 31, 54, 0.15);
 }
 
 .np-occasion-card img {
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
-    transition: transform 0.6s ease;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
 .np-occasion-card:hover img {
-    transform: scale(1.08);
+    transform: scale(1.06);
 }
 
+
+/* Overlay */
+
+.np-card-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 14px;
+
+    background: linear-gradient(
+        to top,
+        rgba(55, 15, 30, 0.9),
+        rgba(55, 15, 30, 0.05)
+    );
+}
+
+.np-card-content {
+    width: 100%;
+}
+
+.np-card-content small {
+    display: block;
+    font-size: 7px;
+    letter-spacing: 1px;
+    color: #f5d5df;
+}
+
+.np-card-content h4 {
+    margin: 4px 0 8px;
+
+    color: white;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 19px;
+}
+
+.np-card-content p {
+    display: none;
+}
+
+
+/* Explore */
+
+.np-explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 6px 10px;
+
+    border: 1px solid rgba(255,255,255,0.7);
+    border-radius: 20px;
+
+    background: transparent;
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+.np-explore-btn:hover {
+    background: white;
+    color: #641f36;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .np-occasion-grid {
+        grid-template-columns: repeat(5, minmax(130px, 1fr));
+        overflow-x: auto;
+    }
+
+    .np-occasion-card {
+        min-width: 130px;
+        height: 190px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE - STILL SINGLE ROW
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .np-occasion-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+
+        overflow-x: auto;
+
+        padding-bottom: 8px;
+    }
+
+    .np-occasion-card {
+        flex: 0 0 140px;
+        height: 180px;
+    }
+
+    .np-occasion-grid::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .np-occasion-grid::-webkit-scrollbar-thumb {
+        background: #c98ca2;
+        border-radius: 10px;
+    }
+}
 /* =====================================================
    CARD OVERLAY
 ===================================================== */
