@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,7 +23,7 @@
 <body>
 
 <!-- =====================================================
-     NAVIGATION
+     NAVBAR
 ===================================================== -->
 
 <header class="navbar">
@@ -30,35 +31,32 @@
     <div class="nav-container">
 
         <a href="#home" class="logo">
-            Namma Pookadai
+            Namma<br>
+            <span>Pookadai</span>
         </a>
 
         <nav>
             <ul class="nav-links">
-
                 <li><a href="#home">Home</a></li>
                 <li><a href="#occasion">Occasion</a></li>
                 <li><a href="#collections">Collections</a></li>
-                <li><a href="#custom-builder">Custom Builder</a></li>
+                <li><a href="#custom">Custom Builder</a></li>
                 <li><a href="#story">Our Story</a></li>
-                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#why">Why Us</a></li>
                 <li><a href="#map">Map</a></li>
-                <li><a href="#contact-details">Contact Details</a></li>
-
+                <li><a href="#contact">Contact Details</a></li>
             </ul>
         </nav>
 
-        <div class="nav-right">
+        <div class="nav-icons">
+            <i class="fas fa-search"></i>
 
-            <div class="cart-icon" id="cart-icon">
-                <i class="fas fa-shopping-bag"></i>
-                <span class="cart-count">0</span>
+            <div class="cart-icon">
+                <i class="fas fa-bag-shopping"></i>
+                <span>0</span>
             </div>
 
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-
+            <i class="fas fa-bars mobile-menu"></i>
         </div>
 
     </div>
@@ -67,73 +65,49 @@
 
 
 <!-- =====================================================
-     CART
-===================================================== -->
-
-<div class="cart-sidebar" id="cart-sidebar">
-
-    <div class="cart-header">
-
-        <h2>Your Cart</h2>
-
-        <i class="fas fa-times close-cart" id="close-cart"></i>
-
-    </div>
-
-    <div class="cart-items" id="cart-items">
-    </div>
-
-    <div class="cart-footer">
-
-        <div class="cart-total">
-
-            <span>Total</span>
-            <strong id="cart-total-price">₹0.00</strong>
-
-        </div>
-
-        <button class="checkout-btn">
-            Checkout
-        </button>
-
-    </div>
-
-</div>
-
-<div class="cart-overlay" id="cart-overlay"></div>
-
-
-<!-- =====================================================
-     01 HERO
+     HERO
 ===================================================== -->
 
 <section id="home" class="hero">
 
-    <div class="hero-content">
+    <div class="hero-left">
 
-        <span class="hero-small-title">
-            WELCOME TO NAMMA POOKADAI
+        <span class="hero-small">
+            WELCOME TO NAMMA POOKADAI 🌸
         </span>
 
         <h1>
-            Flowers That
-            <span>Speak From The Heart</span>
+            Namma<br>
+            <span>Pookadai</span>
         </h1>
 
+        <div class="hero-line"></div>
+
         <p>
-            Namma Pookadai brings fresh flowers and beautiful bouquets
-            for every special moment. We create thoughtful arrangements
-            with care, love, and elegance.
+            Fresh flowers, beautiful bouquets and thoughtful gifts
+            for every special moment.
+        </p>
+
+        <p>
+            We create every arrangement with love, care and
+            passion to make your moments unforgettable.
+        </p>
+
+        <p>
+            From simple surprises to grand celebrations,
+            we make every emotion bloom.
         </p>
 
         <div class="hero-buttons">
 
-            <a href="#collections" class="main-btn">
+            <a href="#collections" class="btn primary">
                 Shop Now
+                <i class="fas fa-paper-plane"></i>
             </a>
 
-            <a href="#occasion" class="outline-btn">
-                Explore Flowers
+            <a href="#custom" class="btn outline">
+                Custom Bouquet
+                <i class="fas fa-paper-plane"></i>
             </a>
 
         </div>
@@ -141,24 +115,15 @@
     </div>
 
 
-    <!-- IMAGE SPACE -->
+    <div class="hero-right">
 
-    <div class="hero-image-box">
-
-        <div class="hero-image-frame">
-
-            <img src="hero_image.png"
-                 alt="Namma Pookadai Flower Bouquet">
-
-        </div>
-
-        <div class="hero-decoration">
-            ✿
-        </div>
+        <!-- Replace this image if needed -->
+        <img src="hero_image.png" alt="Namma Pookadai Bouquet">
 
     </div>
 
 </section>
+
 
 
 <!-- =====================================================
@@ -167,224 +132,159 @@
 
 <section id="occasion" class="occasion-section">
 
-    <div class="section-heading">
-
-        <span>FIND THE PERFECT BLOOMS</span>
-
-        <h2>
-            Flowers for Every Occasion
-        </h2>
-
-        <p>
-            Beautiful flowers for every moment that matters.
-        </p>
-
-    </div>
-
-
-    <!-- 01 SHOP BY OCCASION -->
-
-    <div class="category-heading">
-
-        <div>
-            <small>01</small>
-            <h3>Shop by Every Occasion</h3>
-        </div>
-
-        <p>
-            Make every special moment a little more beautiful.
-        </p>
-
+    <div class="section-number-title">
+        <span>01</span>
+        <h2>SHOP BY EVERY OCCASION</h2>
     </div>
 
 
     <div class="occasion-grid">
 
         <!-- Birthday -->
-
         <div class="occasion-card">
 
-            <div class="occasion-image">
-                <img src="Birthday.png"
-                     alt="Birthday Flowers">
-            </div>
+            <img src="Birthday.png" alt="Birthday">
 
-            <div class="occasion-info">
+            <div class="card-content">
+                <h3>Birthday</h3>
+                <p>Make their day special</p>
 
-                <span>MAKE THEM SMILE</span>
-
-                <h4>Birthday</h4>
-
-                <a href="#collections">
-                    Explore <i class="fas fa-arrow-right"></i>
-                </a>
-
+                <button>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- Anniversary -->
-
         <div class="occasion-card">
 
-            <div class="occasion-image">
-                <img src="Anniversary.png"
-                     alt="Anniversary Flowers">
-            </div>
+            <img src="Anniversary.png" alt="Anniversary">
 
-            <div class="occasion-info">
+            <div class="card-content">
+                <h3>Anniversary</h3>
+                <p>Celebrate your love</p>
 
-                <span>CELEBRATE LOVE</span>
-
-                <h4>Anniversary</h4>
-
-                <a href="#collections">
-                    Explore <i class="fas fa-arrow-right"></i>
-                </a>
-
+                <button>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- Valentine -->
-
         <div class="occasion-card">
 
-            <div class="occasion-image">
-                <img src="Valetine's day .png"
-                     alt="Valentine Flowers">
-            </div>
+            <img src="Valetine's day .png" alt="Valentine">
 
-            <div class="occasion-info">
+            <div class="card-content">
+                <h3>Valentine's Day</h3>
+                <p>Express your love</p>
 
-                <span>FROM THE HEART</span>
-
-                <h4>Valentine's Day</h4>
-
-                <a href="#collections">
-                    Explore <i class="fas fa-arrow-right"></i>
-                </a>
-
+                <button>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- Congratulations -->
-
         <div class="occasion-card">
 
-            <div class="occasion-image">
-                <img src="Congratulations.png"
-                     alt="Congratulations Flowers">
-            </div>
+            <img src="Congratulations.png" alt="Congratulations">
 
-            <div class="occasion-info">
+            <div class="card-content">
+                <h3>Congratulations</h3>
+                <p>Celebrate success</p>
 
-                <span>CELEBRATE SUCCESS</span>
-
-                <h4>Congratulations</h4>
-
-                <a href="#collections">
-                    Explore <i class="fas fa-arrow-right"></i>
-                </a>
-
+                <button>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- Wedding -->
-
         <div class="occasion-card">
 
-            <div class="occasion-image">
-                <img src="Wedding.png"
-                     alt="Wedding Flowers">
-            </div>
+            <img src="Wedding.png" alt="Wedding">
 
-            <div class="occasion-info">
+            <div class="card-content">
+                <h3>Wedding</h3>
+                <p>Perfect for your big day</p>
 
-                <span>BEAUTIFUL BEGINNINGS</span>
-
-                <h4>Wedding</h4>
-
-                <a href="#collections">
-                    Explore <i class="fas fa-arrow-right"></i>
-                </a>
-
+                <button>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
             </div>
 
         </div>
 
     </div>
 
+</section>
 
-    <!-- =================================================
-         02 SHOP BY STYLE
-    ================================================== -->
 
-    <div class="style-block">
 
-        <div class="category-heading">
+<!-- =====================================================
+     STYLE + FLOWERS
+===================================================== -->
 
-            <div>
-                <small>02</small>
-                <h3>Shop by Style</h3>
-            </div>
+<section class="category-area">
 
-            <p>
-                Choose the feeling you want your bouquet to create.
-            </p>
+    <!-- STYLE -->
 
+    <div class="category-column">
+
+        <div class="section-number-title">
+            <span>02</span>
+            <h2>SHOP BY STYLE</h2>
         </div>
 
 
         <div class="style-grid">
 
             <div class="style-card">
+                <div class="style-image">
+                    <img src="Minimal.png" alt="Minimal">
+                </div>
 
-                <div class="style-icon">🌿</div>
-
-                <h4>Minimal</h4>
-
+                <h3>Minimal</h3>
                 <p>Simple & Elegant</p>
-
             </div>
 
 
             <div class="style-card">
+                <div class="style-image">
+                    <img src="Premium.png" alt="Premium">
+                </div>
 
-                <div class="style-icon">✨</div>
-
-                <h4>Premium</h4>
-
-                <p>Rich & Luxurious</p>
-
+                <h3>Premium</h3>
+                <p>Luxury & Quality</p>
             </div>
 
 
             <div class="style-card">
+                <div class="style-image">
+                    <img src="Romantic.png" alt="Romantic">
+                </div>
 
-                <div class="style-icon">🌹</div>
-
-                <h4>Romantic</h4>
-
-                <p>Soft & Heartfelt</p>
-
+                <h3>Romantic</h3>
+                <p>Love & Romance</p>
             </div>
 
 
             <div class="style-card">
+                <div class="style-image">
+                    <img src="Gift.png" alt="Gift">
+                </div>
 
-                <div class="style-icon">🎁</div>
-
-                <h4>Gift</h4>
-
-                <p>Made to Surprise</p>
-
+                <h3>Gift</h3>
+                <p>Perfect Gifting</p>
             </div>
 
         </div>
@@ -392,140 +292,66 @@
     </div>
 
 
-    <!-- =================================================
-         03 SHOP BY FLOWERS
-    ================================================== -->
+    <!-- FLOWERS -->
 
-    <div class="flower-block">
+    <div class="category-column flowers-column">
 
-        <div class="category-heading">
-
-            <div>
-                <small>03</small>
-                <h3>Shop by Flowers</h3>
-            </div>
-
-            <p>
-                Pick the flowers that speak your heart.
-            </p>
-
+        <div class="section-number-title">
+            <span>03</span>
+            <h2>SHOP BY FLOWERS</h2>
         </div>
 
 
         <div class="flower-grid">
 
-
-            <!-- ROSES -->
-
             <div class="flower-card">
-
-                <div class="flower-image">
-                    <img src="Roses.png"
-                         alt="Roses">
-                </div>
-
-                <div class="flower-info">
-
-                    <h4>Roses</h4>
-                    <p>Love & Elegance</p>
-
-                </div>
-
+                <span>🌹</span>
+                <h4>Roses</h4>
             </div>
 
-
-            <!-- TULIPS -->
-
             <div class="flower-card">
-
-                <div class="flower-image">
-                    <img src="Tulips.png"
-                         alt="Tulips">
-                </div>
-
-                <div class="flower-info">
-
-                    <h4>Tulips</h4>
-                    <p>Fresh & Graceful</p>
-
-                </div>
-
+                <span>🌷</span>
+                <h4>Tulip</h4>
             </div>
 
-
-            <!-- SUNFLOWER -->
-
             <div class="flower-card">
-
-                <div class="flower-image">
-                    <img src="Sunflower.png"
-                         alt="Sunflower">
-                </div>
-
-                <div class="flower-info">
-
-                    <h4>Sunflower</h4>
-                    <p>Bright & Cheerful</p>
-
-                </div>
-
+                <span>🌻</span>
+                <h4>Sunflower</h4>
             </div>
 
-
-            <!-- ORCHIDS -->
-
             <div class="flower-card">
-
-                <div class="flower-image">
-                    <img src="Orchids.png"
-                         alt="Orchids">
-                </div>
-
-                <div class="flower-info">
-
-                    <h4>Orchids</h4>
-                    <p>Elegant & Premium</p>
-
-                </div>
-
+                <span>🌸</span>
+                <h4>Orchids</h4>
             </div>
 
-
-            <!-- JASMINE -->
-
             <div class="flower-card">
-
-                <div class="flower-image">
-                    <img src="Jasmine.png"
-                         alt="Jasmine">
-                </div>
-
-                <div class="flower-info">
-
-                    <h4>Jasmine</h4>
-                    <p>Pure & Fragrant</p>
-
-                </div>
-
+                <span>🌼</span>
+                <h4>Jasmine</h4>
             </div>
 
-
-            <!-- DAISY -->
+            <div class="flower-card">
+                <span>🌼</span>
+                <h4>Daisy</h4>
+            </div>
 
             <div class="flower-card">
+                <span>🌺</span>
+                <h4>Lily</h4>
+            </div>
 
-                <div class="flower-image">
-                    <img src="Daisy.png"
-                         alt="Daisy">
-                </div>
+            <div class="flower-card">
+                <span>🌸</span>
+                <h4>Carnation</h4>
+            </div>
 
-                <div class="flower-info">
+            <div class="flower-card">
+                <span>🌼</span>
+                <h4>Marigold</h4>
+            </div>
 
-                    <h4>Daisy</h4>
-                    <p>Fresh & Joyful</p>
-
-                </div>
-
+            <div class="flower-card more">
+                <strong>More<br>Flowers</strong>
+                <i class="fas fa-arrow-right"></i>
             </div>
 
         </div>
@@ -533,464 +359,267 @@
     </div>
 
 </section>
+
 
 
 <!-- =====================================================
-     CUSTOM BUILDER
+     CUSTOM BOUQUET
 ===================================================== -->
 
-<section id="custom-builder" class="custom-section">
+<section id="custom" class="custom-section">
 
-    <div class="custom-container">
+    <div class="custom-intro">
 
+        <span>CREATE YOUR OWN</span>
 
-        <div class="custom-content">
+        <h2>Custom Bouquet</h2>
 
-            <span>04 · MAKE IT YOURS</span>
+        <p>
+            Design a unique bouquet that perfectly matches
+            your style, occasion and emotions.
+        </p>
 
-            <h2>
-                Create a Bouquet
-                <em>Just for Them</em>
-            </h2>
+        <div class="custom-features">
 
-            <p>
-                Have something special in mind?
-                Tell us what you want and we will create
-                a beautiful bouquet specially for you.
-            </p>
-
-            <div class="custom-points">
-
-                <div>
-                    <i class="fas fa-check"></i>
-                    Choose your favourite flowers
-                </div>
-
-                <div>
-                    <i class="fas fa-check"></i>
-                    Add chocolates or gifts
-                </div>
-
-                <div>
-                    <i class="fas fa-check"></i>
-                    Add your special message
-                </div>
-
+            <div>
+                <i class="fas fa-leaf"></i>
+                <small>Fresh Flowers</small>
             </div>
 
-        </div>
-
-
-        <!-- FORM -->
-
-        <div class="custom-form">
-
-            <h3>Customize Your Bouquet</h3>
-
-            <p class="form-subtitle">
-                Tell us what you would like.
-            </p>
-
-
-            <div class="form-row">
-
-                <div class="form-field">
-
-                    <label>
-                        Your Name
-                    </label>
-
-                    <input type="text"
-                           placeholder="Enter your name">
-
-                </div>
-
-
-                <div class="form-field">
-
-                    <label>
-                        Phone Number
-                    </label>
-
-                    <input type="tel"
-                           placeholder="Enter phone number">
-
-                </div>
-
+            <div>
+                <i class="fas fa-gem"></i>
+                <small>Premium Quality</small>
             </div>
 
-
-            <div class="form-field">
-
-                <label>
-                    Choose Your Flower
-                </label>
-
-                <select>
-
-                    <option value="">
-                        Select a flower
-                    </option>
-
-                    <option>Roses</option>
-                    <option>Tulips</option>
-                    <option>Sunflower</option>
-                    <option>Orchids</option>
-                    <option>Jasmine</option>
-                    <option>Daisy</option>
-                    <option>Mixed Flowers</option>
-
-                </select>
-
+            <div>
+                <i class="fas fa-pen"></i>
+                <small>Custom Design</small>
             </div>
 
-
-            <div class="form-field">
-
-                <label>
-                    Bouquet Style
-                </label>
-
-                <select>
-
-                    <option value="">
-                        Select a style
-                    </option>
-
-                    <option>Minimal</option>
-                    <option>Premium</option>
-                    <option>Romantic</option>
-                    <option>Gift</option>
-
-                </select>
-
+            <div>
+                <i class="fas fa-truck"></i>
+                <small>On-time Delivery</small>
             </div>
-
-
-            <div class="form-field">
-
-                <label>
-                    Add Something Special
-                </label>
-
-                <div class="checkbox-group">
-
-                    <label>
-                        <input type="checkbox">
-                        Chocolate
-                    </label>
-
-                    <label>
-                        <input type="checkbox">
-                        Gift
-                    </label>
-
-                    <label>
-                        <input type="checkbox">
-                        Greeting Card
-                    </label>
-
-                </div>
-
-            </div>
-
-
-            <div class="form-field">
-
-                <label>
-                    Special Requirements
-                </label>
-
-                <textarea
-                    rows="4"
-                    placeholder="Tell us what you need..."></textarea>
-
-            </div>
-
-
-            <button class="custom-submit">
-                Create My Bouquet
-                <i class="fas fa-arrow-right"></i>
-            </button>
 
         </div>
 
     </div>
 
+
+    <div class="custom-image">
+
+        <img src="Custom Bouquet.png" alt="Custom Bouquet">
+
+    </div>
+
+
+    <div class="custom-form">
+
+        <label>1. Choose Category</label>
+
+        <div class="category-buttons">
+            <button>Flower</button>
+            <button>Chocolate</button>
+            <button>Gift</button>
+            <button>Combo</button>
+        </div>
+
+
+        <label>2. Choose Flowers</label>
+
+        <select>
+            <option>Select flowers</option>
+            <option>Roses</option>
+            <option>Tulips</option>
+            <option>Sunflower</option>
+            <option>Orchids</option>
+            <option>Jasmine</option>
+            <option>Daisy</option>
+        </select>
+
+
+        <label>3. Add-ons (Optional)</label>
+
+        <div class="checkboxes">
+
+            <label>
+                <input type="checkbox">
+                Chocolate
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Teddy Bear
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Greeting Card
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Vase
+            </label>
+
+        </div>
+
+    </div>
+
+
+    <div class="custom-form right-form">
+
+        <label>4. Occasion</label>
+
+        <select>
+            <option>Select occasion</option>
+            <option>Birthday</option>
+            <option>Anniversary</option>
+            <option>Valentine's Day</option>
+            <option>Wedding</option>
+            <option>Congratulations</option>
+        </select>
+
+
+        <label>5. Your Requirements</label>
+
+        <textarea
+            placeholder="Tell us about your bouquet..."></textarea>
+
+
+        <button class="create-btn">
+            Create Bouquet
+            <i class="fas fa-paper-plane"></i>
+        </button>
+
+    </div>
+
 </section>
+
 
 
 <!-- =====================================================
      FEATURED COLLECTIONS
 ===================================================== -->
 
-<section id="collections" class="collections-section">
+<section id="collections" class="featured-section">
 
-    <div class="section-heading">
+    <div class="featured-title">
 
-        <span>OUR FAVOURITES</span>
+        <span>────────</span>
 
-        <h2>
-            Featured Collections
-        </h2>
+        <h2>FEATURED COLLECTIONS 🌸</h2>
 
-        <p>
-            Beautiful bouquets made for beautiful moments.
-        </p>
+        <span>────────</span>
 
     </div>
 
 
-    <div class="products-grid">
-
+    <div class="featured-grid">
 
         <!-- 1 -->
-
         <div class="product-card">
 
-            <div class="product-image">
-
-                <img src="Birthday Special 2.png"
-                     alt="Birthday Special">
-
-            </div>
+            <img src="Birthday Special 2.png" alt="Birthday Special">
 
             <div class="product-info">
-
-                <span>FOR BIRTHDAYS</span>
-
                 <h3>Birthday Special</h3>
 
-                <p>
-                    An elegant bouquet of premium blush pink roses.
-                </p>
+                <span>₹85.00</span>
 
-                <div class="product-bottom">
-
-                    <strong>₹85.00</strong>
-
-                    <button class="add-to-cart-btn"
-                            data-id="1"
-                            data-name="Birthday Special"
-                            data-price="85.00"
-                            data-img="Birthday Special 2.png">
-
-                        Add to Cart
-
-                    </button>
-
-                </div>
-
+                <button>
+                    <i class="fas fa-cart-shopping"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- 2 -->
-
         <div class="product-card">
 
-            <div class="product-image">
-
-                <img src="Wedding.png"
-                     alt="Wedding Bouquet">
-
-            </div>
+            <img src="Wedding.png" alt="Wedding">
 
             <div class="product-info">
-
-                <span>FOR WEDDINGS</span>
-
                 <h3>Wedding</h3>
 
-                <p>
-                    A graceful floral arrangement for beautiful beginnings.
-                </p>
+                <span>₹120.00</span>
 
-                <div class="product-bottom">
-
-                    <strong>₹125.00</strong>
-
-                    <button class="add-to-cart-btn"
-                            data-id="7"
-                            data-name="Wedding"
-                            data-price="125.00"
-                            data-img="Wedding.png">
-
-                        Add to Cart
-
-                    </button>
-
-                </div>
-
+                <button>
+                    <i class="fas fa-cart-shopping"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- 3 -->
-
         <div class="product-card">
 
-            <div class="product-image">
-
-                <img src="Simple & Sweet.png"
-                     alt="Simple and Sweet">
-
-            </div>
+            <img src="Simple & Sweet.png" alt="Simple & Sweet">
 
             <div class="product-info">
-
-                <span>SOFT & SWEET</span>
-
                 <h3>Simple & Sweet</h3>
 
-                <p>
-                    A beautiful luxury arrangement filled with soft blooms.
-                </p>
+                <span>₹120.00</span>
 
-                <div class="product-bottom">
-
-                    <strong>₹120.00</strong>
-
-                    <button class="add-to-cart-btn"
-                            data-id="2"
-                            data-name="Simple & Sweet"
-                            data-price="120.00"
-                            data-img="Simple & Sweet.png">
-
-                        Add to Cart
-
-                    </button>
-
-                </div>
-
+                <button>
+                    <i class="fas fa-cart-shopping"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- 4 -->
-
         <div class="product-card">
 
-            <div class="product-image">
-
-                <img src="Romantic Red.png"
-                     alt="Romantic Red">
-
-            </div>
+            <img src="Romantic Red.png" alt="Romantic Red">
 
             <div class="product-info">
-
-                <span>FOR LOVE</span>
-
                 <h3>Romantic Red</h3>
 
-                <p>
-                    A passionate bouquet of deep red and burgundy roses.
-                </p>
+                <span>₹95.00</span>
 
-                <div class="product-bottom">
-
-                    <strong>₹95.00</strong>
-
-                    <button class="add-to-cart-btn"
-                            data-id="4"
-                            data-name="Romantic Red"
-                            data-price="95.00"
-                            data-img="Romantic Red.png">
-
-                        Add to Cart
-
-                    </button>
-
-                </div>
-
+                <button>
+                    <i class="fas fa-cart-shopping"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- 5 -->
-
         <div class="product-card">
 
-            <div class="product-image">
-
-                <img src="Premium Mix.png"
-                     alt="Premium Mix">
-
-            </div>
+            <img src="Premium Mix.png" alt="Premium Mix">
 
             <div class="product-info">
-
-                <span>PREMIUM COLLECTION</span>
-
                 <h3>Premium Mix</h3>
 
-                <p>
-                    A joyful mix of beautiful flowers and elegant foliage.
-                </p>
+                <span>₹110.00</span>
 
-                <div class="product-bottom">
-
-                    <strong>₹110.00</strong>
-
-                    <button class="add-to-cart-btn"
-                            data-id="5"
-                            data-name="Premium Mix"
-                            data-price="110.00"
-                            data-img="Premium Mix.png">
-
-                        Add to Cart
-
-                    </button>
-
-                </div>
-
+                <button>
+                    <i class="fas fa-cart-shopping"></i>
+                </button>
             </div>
 
         </div>
 
 
         <!-- 6 -->
-
         <div class="product-card">
 
-            <div class="product-image">
-
-                <img src="Sunshine Bouquet.png"
-                     alt="Sunshine Bouquet">
-
-            </div>
+            <img src="Sunshine Bouquet.png" alt="Sunshine Bouquet">
 
             <div class="product-info">
-
-                <span>BRIGHT & HAPPY</span>
-
                 <h3>Sunshine Bouquet</h3>
 
-                <p>
-                    A cheerful bouquet made to brighten someone's day.
-                </p>
+                <span>₹150.00</span>
 
-                <div class="product-bottom">
-
-                    <strong>₹150.00</strong>
-
-                    <button class="add-to-cart-btn"
-                            data-id="3"
-                            data-name="Sunshine Bouquet"
-                            data-price="150.00"
-                            data-img="Sunshine Bouquet.png">
-
-                        Add to Cart
-
-                    </button>
-
-                </div>
-
+                <button>
+                    <i class="fas fa-cart-shopping"></i>
+                </button>
             </div>
 
         </div>
@@ -998,6 +627,7 @@
     </div>
 
 </section>
+
 
 
 <!-- =====================================================
@@ -1006,276 +636,149 @@
 
 <section id="story" class="story-section">
 
-    <div class="story-overlay">
+    <div class="story-content">
 
-        <div class="story-content">
+        <span>OUR STORY</span>
 
-            <span>OUR STORY</span>
+        <h2>A Story Behind Every Bloom</h2>
 
-            <h2>
-                Every Flower Has
-                A Little Story
-            </h2>
+        <p>
+            We are passionate florists dedicated to creating
+            beautiful moments through flowers. Every bouquet
+            we create tells a story of love, care and perfection.
+        </p>
 
-            <p>
-                At Namma Pookadai, we believe flowers are more than
-                beautiful blooms. They carry emotions, memories and
-                moments that deserve to be remembered.
-            </p>
-
-            <p>
-                From selecting fresh flowers to carefully creating
-                every bouquet, we put love and attention into every
-                order. Whether it is a birthday, wedding, anniversary
-                or simply a thoughtful surprise, we make every bouquet
-                special.
-            </p>
-
-        </div>
+        <button>Read More</button>
 
     </div>
 
 </section>
 
 
-<!-- =====================================================
-     WHY US
-===================================================== -->
-
-<section id="why-us" class="why-section">
-
-    <div class="section-heading">
-
-        <span>THE NAMMA POOKADAI DIFFERENCE</span>
-
-        <h2>
-            Why Choose Us?
-        </h2>
-
-        <p>
-            Because every bouquet deserves to be made with care.
-        </p>
-
-    </div>
-
-
-    <div class="why-grid">
-
-
-        <div class="why-card">
-
-            <div class="why-icon">
-                <i class="fas fa-leaf"></i>
-            </div>
-
-            <h3>Fresh Flowers</h3>
-
-            <p>
-                Fresh and carefully selected flowers for every order.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div class="why-icon">
-                <i class="fas fa-heart"></i>
-            </div>
-
-            <h3>Made With Love</h3>
-
-            <p>
-                Every bouquet is arranged with care and attention.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div class="why-icon">
-                <i class="fas fa-truck"></i>
-            </div>
-
-            <h3>Same Day Delivery</h3>
-
-            <p>
-                Fast and reliable delivery for your special moments.
-            </p>
-
-        </div>
-
-
-        <div class="why-card">
-
-            <div class="why-icon">
-                <i class="fas fa-gem"></i>
-            </div>
-
-            <h3>Premium Quality</h3>
-
-            <p>
-                Beautiful flowers and elegant arrangements every time.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
 
 <!-- =====================================================
-     MAP
+     WHY US + MAP + CONTACT
 ===================================================== -->
 
-<section id="map" class="map-section">
+<section class="bottom-section">
 
-    <div class="section-heading">
+    <!-- WHY US -->
 
-        <span>COME VISIT US</span>
+    <div id="why" class="why-section">
 
-        <h2>
-            Find Namma Pookadai
-        </h2>
+        <h2>WHY CHOOSE US</h2>
 
-        <p>
-            We'd love to welcome you.
-        </p>
+        <div class="why-item">
+            <i class="fas fa-heart"></i>
+
+            <div>
+                <strong>Fresh & Premium Flowers</strong>
+                <p>Handpicked daily for you</p>
+            </div>
+        </div>
+
+
+        <div class="why-item">
+            <i class="fas fa-truck"></i>
+
+            <div>
+                <strong>On-time Delivery</strong>
+                <p>Always on time, every time</p>
+            </div>
+        </div>
+
+
+        <div class="why-item">
+            <i class="fas fa-user"></i>
+
+            <div>
+                <strong>Expert Florists</strong>
+                <p>Professional & experienced</p>
+            </div>
+        </div>
+
+
+        <div class="why-item">
+            <i class="fas fa-thumbs-up"></i>
+
+            <div>
+                <strong>100% Satisfaction</strong>
+                <p>Your happiness is our priority</p>
+            </div>
+        </div>
 
     </div>
 
-    <div class="map-container">
+
+    <!-- MAP -->
+
+    <div id="map" class="location-section">
+
+        <h2>OUR LOCATION</h2>
 
         <iframe
             src="https://www.google.com/maps?q=11.0763286,77.002135&output=embed"
-            width="100%"
-            height="420"
-            style="border:0;"
-            allowfullscreen=""
             loading="lazy">
         </iframe>
 
+        <p>
+            123, Flower Street, Chennai - 600040
+        </p>
+
     </div>
 
-</section>
 
+    <!-- CONTACT -->
 
-<!-- =====================================================
-     CONTACT
-===================================================== -->
+    <div id="contact" class="contact-section">
 
-<section id="contact-details" class="contact-section">
+        <h2>CONTACT DETAILS</h2>
 
-    <div class="contact-container">
-
-
-        <div class="contact-info">
-
-            <span>GET IN TOUCH</span>
-
-            <h2>
-                Let's Create
-                Something Beautiful
-            </h2>
-
-            <p>
-                Have a question, want a custom bouquet,
-                or simply want to say hello?
-                We'd love to hear from you.
-            </p>
-
-
-            <div class="contact-item">
-
-                <div>
-                    <i class="fas fa-location-dot"></i>
-                </div>
-
-                <section>
-                    <small>ADDRESS</small>
-                    <p>
-                        123 Sathy Rd, Saravanampatti,
-                        Coimbatore, Tamil Nadu 641035
-                    </p>
-                </section>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <div>
-                    <i class="fas fa-phone"></i>
-                </div>
-
-                <section>
-                    <small>PHONE</small>
-                    <p>
-                        9843715528
-                    </p>
-                </section>
-
-            </div>
-
-
-            <div class="contact-item">
-
-                <div>
-                    <i class="fas fa-envelope"></i>
-                </div>
-
-                <section>
-                    <small>EMAIL</small>
-                    <p>
-                        hello@nammapookadai.com
-                    </p>
-                </section>
-
-            </div>
-
+        <div class="contact-detail">
+            <i class="fas fa-phone"></i>
+            <span>+91 9843715528</span>
         </div>
 
+        <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <span>hello@nammapookadai.com</span>
+        </div>
 
-        <!-- CONTACT FORM -->
+        <div class="contact-detail">
+            <i class="fas fa-location-dot"></i>
+            <span>
+                123, Flower Street, Saravanampatti,
+                Coimbatore, Tamil Nadu
+            </span>
+        </div>
 
-        <div class="contact-form">
-
-            <h3>
-                Send Us A Message
-            </h3>
-
-            <form id="contact-form">
-
-                <input type="text"
-                       placeholder="Your Name"
-                       required>
-
-                <input type="email"
-                       placeholder="Your Email"
-                       required>
-
-                <input type="tel"
-                       placeholder="Your Phone Number">
-
-                <textarea
-                    rows="6"
-                    placeholder="Your Message"
-                    required></textarea>
-
-                <button type="submit">
-                    Send Message
-                    <i class="fas fa-arrow-right"></i>
-                </button>
-
-            </form>
-
+        <div class="contact-detail">
+            <i class="fas fa-clock"></i>
+            <span>Mon - Sun: 9:00 AM - 9:00 PM</span>
         </div>
 
     </div>
 
+
+    <!-- CONTACT FORM -->
+
+    <div class="mini-contact-form">
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button>
+            Send Message
+            <i class="fas fa-paper-plane"></i>
+        </button>
+
+    </div>
+
 </section>
+
 
 
 <!-- =====================================================
@@ -1284,60 +787,27 @@
 
 <footer>
 
-    <div class="footer-container">
-
-        <div>
-
-            <h3>
-                Namma Pookadai
-            </h3>
-
-            <p>
-                Fresh flowers. Thoughtful bouquets.
-                Beautiful moments.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h4>Quick Links</h4>
-
-            <a href="#home">Home</a>
-            <a href="#occasion">Occasion</a>
-            <a href="#collections">Collections</a>
-            <a href="#custom-builder">Custom Builder</a>
-
-        </div>
-
-
-        <div>
-
-            <h4>Explore</h4>
-
-            <a href="#story">Our Story</a>
-            <a href="#why-us">Why Us</a>
-            <a href="#map">Map</a>
-            <a href="#contact-details">Contact</a>
-
-        </div>
-
+    <div class="footer-logo">
+        Namma<br>
+        Pookadai 🌸
     </div>
 
+    <p>
+        © 2026 Namma Pookadai. All Rights Reserved.
+    </p>
 
-    <div class="footer-bottom">
+    <div class="social">
 
-        <p>
-            © 2026 Namma Pookadai. All Rights Reserved.
-        </p>
+        <span>Follow Us:</span>
+
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-pinterest"></i>
 
     </div>
 
 </footer>
-
-
-<script src="script.js"></script>
 
 </body>
 </html>
